@@ -1,0 +1,373 @@
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* navigationbar */
+#navbar {
+
+padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+
+}
+
+/* for the set my imge as a logo*/
+#logo {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0px 0px;
+    height: 82px;
+    width: 131px;
+    /* border: 4px solid whitesmoke; */
+
+
+
+}
+
+
+
+/* .item{
+    /* margin: 4px 27px; */
+/* margin: 0px 1px; */
+/* padding: 39px 42px; */
+/* } */
+#navbar ul {
+    display: flex;
+    margin-top: 2em;
+
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    z-index: -1;
+    position: absolute;
+    /* height: 100px; */
+    height: 100%;
+
+    width: 100%;
+    opacity: 0.5;
+
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 2px 22px;
+    border-radius: 20px;
+}
+
+#navbar ul li a:hover {
+    z-index: 3;
+    color: black;
+    background-color: white;
+}
+
+/* home section */
+#home {
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    padding: 15px 84px;
+    justify-content: center;
+    align-items: center;
+    height: 457px;
+
+
+}
+
+#home::before {
+    content: '';
+    position: absolute;
+    height: 160%;
+    width: 100%;
+    /* background: url('/img/pexels-roman-odintsov-5903160.jpg') no-repeat center center/cover; */
+    background: url('../pexels-roman-odintsov-5903160.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.89;
+    /* background: url('img/pexels-rajesh-tp-1633526.jpg'); */
+
+
+}
+
+#home h1 {
+    color: black;
+    margin-top: 1rem;
+    /* text-align: center; */
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* sevices section */
+#services-container{
+    align-items: center;
+    justify-content: center;
+    display: block;
+    margin: auto;
+}
+#services {
+    margin: 34px;
+    display: flex;
+    
+
+    /* border: 2px solid purple; */
+}
+
+#services .box {
+    height: 318px;
+    border: 2px solid brown;
+    padding: 14px;
+    
+    margin-top: 115px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 22px;
+
+    background-color: rgb(238, 223, 223);
+
+}
+
+#services .box:hover {
+    background-color: rgb(287, 245, 290);
+
+
+}
+
+#services .box img {
+    height: 163px;
+    display: block;
+    margin: auto;
+}
+
+/* #services{}
+#services{} */
+/* client section */
+#client-section{
+    position: relative;
+    /* height: 260px; */
+    /* border: 2px solid purple; */
+}
+#client-section::before{
+    content: '';
+    position: absolute;
+
+    /* background: url('/img/bg2.jpg') no-repeat center center/cover; */
+    background: url('../bg2.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    z-index: -1;
+}
+.clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clientitem{
+    padding: 34px;
+    /* border: 2px solid black; */
+    height: 60px;
+    width: 143px;
+   
+    text-align: center;
+}
+
+.clientitem img{
+    height: 53px;
+ 
+}
+/* contact */
+#contact{
+    position: relative;
+    /* height: 260px; */
+
+} 
+#contact::before{
+    content:"";
+    top: 0px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url('/img/bg3.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity:0.5;
+}
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact input,
+#contact textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+
+}
+.contact-box form{
+    width: 40%;
+    /* border: 2px solid purple; */
+}
+.contact-box label{
+  font-size: 1.3rem;
+}
+footer{
+    color: white;
+    background-color: black;
+    padding: 9px 20px;
+}
+
+/* utility class */
+.h-primary {
+    display: inli;
+    font-size: 2.5rem;
+    padding: 12px;
+    /* margin: 17px; */
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+#services-container .h-primary {
+    position: relative;
+    /* display: flex;
+    flex-direction: column; */
+    margin-bottom: 2rem;
+    top: 9rem;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.secondary-center {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 12px;
+}
+
+.center {
+    text-align: center;
+}
+
+.btn {
+    color: black;
+    padding: 8px 37px;
+    border-radius: 30px;
+    margin: 1em;
+    background-color: #b5c3cf;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(193, 181, 181);
+}
+
+
+/* Resposive website */
+@media(max-width:1170px){
+    #navbar{
+        padding-bottom: 1rem;
+        flex-direction: column;
+    }
+    #navbar ul li a{
+        font-size: 20px;
+        padding: 0px 7px;
+        padding-bottom: 8px;
+        /* margin-right: 5px; */
+    }
+    #logo{
+        height: 42px;
+    }
+    #navbar::before{
+        height: 85%;
+    }
+    
+    
+    /* home */
+    #home{
+        height: 327px;
+        padding:17px 25px;
+    
+    }
+    #home h1{
+        color:white;
+        margin-top: 8rem;
+    }
+    #home::before{
+        height: 720px;
+    }
+    #home p{
+        font-size: 1.12rem;
+    }
+    /* Services section */
+    #services{
+        flex-direction: column;
+    }
+    #services .box{
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    #services .box img{
+        width: 8em;
+        height: auto;
+    }
+    #services-container .h-primary{
+        margin-bottom: 8rem;
+    }
+    
+    /* Client */
+    .clients{
+        flex-wrap: wrap;
+    
+    }
+    .clients img{
+        width: 75px;
+        height: auto ;
+        padding: 0px;
+    }
+    .contact-box form{
+        width: 80%;
+    }
+    /* utility Classes */
+    .h-primary{
+        font-size: 2.29rem;
+    }
+    .btn {
+        padding: 8px 37px;
+    
+        background-color: #b5c3cf;
+    
+    }
+@media(max-widht:360px){
+    h1{
+        color: green;
+    }
+}
+}
